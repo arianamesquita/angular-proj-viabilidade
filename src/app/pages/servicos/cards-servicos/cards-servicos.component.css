@@ -1,0 +1,35 @@
+.left-top{
+  margin-left: 3vw;
+}
+.right-top{
+  margin-left: 60px;
+}
+.left-bottom {
+  margin-left: 3vw;
+}
+.right-bottom {
+  margin-left: 60px;
+}
+.frame{
+  position: absolute;
+  transform: translateY(15%);
+}
+.tabela {
+  width: 100%;
+  transform: translateY(85%);
+  background-color: #303b30;
+}
+td {
+  background-color: #c9d3c9;
+  text-align: center;
+  font-family: 'Josefin Slab2';
+  font-size: 18px;
+}
+tr {
+  background-color: #90a190;
+}
+th{
+  text-align: center;
+  font-family: 'Josefin Slab3';
+  font-size: 18px;
+}

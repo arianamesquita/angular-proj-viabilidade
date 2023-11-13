@@ -1,2 +1,50 @@
-<app-cards *ngIf="display"></app-cards>
+<div *ngIf="display">
+  <div class="frame">
+    <app-cards label="{{cadastrarTerreno}}"
+              type="{{adicionar}}"
+              class="left-top"
+              (click)="redirect(cadastrarTerreno)">
+    </app-cards>
+    <app-cards label="{{cadastrarTipologia}}"
+              type="{{tipoTerreno}}"
+              class="right-top"
+              (click)="redirect(cadastrarTipologia)">
+    </app-cards>
+    <app-cards label="{{consultar}}"
+              type="{{tipoPesquisar}}"
+              class="left-bottom"
+              (click)="redirect(consultar)">
+    </app-cards>
+    <app-cards label="{{atualizar}}"
+              type="{{grafico}}"
+              class="right-bottom"
+              (click)="redirect(atualizar)">
+    </app-cards>
+  </div>
+
+
+  <table mat-table [dataSource]="dataSource" class="tabela">
+
+    <!--  apelidoTerreno: string; -->
+    <ng-container matColumnDef="apelidoTerreno">
+      <th mat-header-cell *matHeaderCellDef> Apelido Terreno </th>
+      <td mat-cell *matCellDef="let element"> {{element.apelidoTerreno}} </td>
+    </ng-container>
+
+    <!-- apelidoTipologia: string; -->
+    <ng-container matColumnDef="apelidoTipologia">
+      <th mat-header-cell *matHeaderCellDef> Apelido Tipologia </th>
+      <td mat-cell *matCellDef="let element"> {{element.apelidoTipologia}} </td>
+    </ng-container>
+
+    <!-- num_UH_estudo: number; -->
+    <ng-container matColumnDef="num_UH_estudo">
+      <th mat-header-cell *matHeaderCellDef> Unidades Possíveis </th>
+      <td mat-cell *matCellDef="let element"> {{element.num_UH_estudo}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>
 

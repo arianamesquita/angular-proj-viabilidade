@@ -2,14 +2,18 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CardsServicosComponent } from './cards-servicos/cards-servicos.component';
 import { CardsComponent } from './cards-servicos/cards/cards.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
-    CardsServicosComponent,
-    CardsComponent
+    CardsComponent,
+    CardsServicosComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatIconModule,
+    MatTableModule
   ],
   exports: [
     CardsServicosComponent,

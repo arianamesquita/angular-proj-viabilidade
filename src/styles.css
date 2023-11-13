@@ -27,12 +27,14 @@
   font-weight: normal;
   font-style: normal;
 }
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100&family=Playpen+Sans:wght@200&display=swap');
 body{
   background-color: rgb(237, 240, 237);
   display:contents;
 }
 
-html, body { height: 100%; }
+html, body { height: 100%;
+  background-color: rgb(241, 247, 231);}
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

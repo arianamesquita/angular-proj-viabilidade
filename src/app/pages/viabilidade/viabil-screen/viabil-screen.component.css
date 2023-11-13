@@ -1,8 +1,7 @@
 .frame{
-  background-color: #D9D9D9;
   width: 78vw;
-  height: 100vh;
-  transform: translateY(10%);
+  height: 110vh;
+  transform: translateY(15%);
   display: grid;
   grid-template-columns: repeat(11, 1fr);
   grid-template-rows: repeat(12, 1fr);
@@ -45,8 +44,8 @@
   grid-row-start: 8;
 }
 .produto{
-  font-family: 'Josefin Slab3';
-  letter-spacing: 6px;
+  font-family: 'PlayPen Sans' bold;
+  letter-spacing: 4px;
   font-size: 14px;
   margin-left: 10px;
   padding: 5px;
@@ -67,8 +66,8 @@ img{
   height: 100%;
 }
 .label-left{
-  font-family: 'Josefin Slab3';
-  letter-spacing: 6px;
+  font-family: 'PlayPen Sans' bold;
+  letter-spacing: 4px;
   font-size: 14px;
   margin-top: 15px;
   margin-left: 10px;
@@ -89,4 +88,34 @@ img{
   grid-column-start: 4;
   margin-top: 15px;
   grid-row-start: 8;
+}
+.button-limpar{
+  grid-column-start: 7;
+  margin-top: 30px;
+  grid-row-start: 9;
+  width: 40%;
+  height: 7vh;
+  border-radius: 15%;
+  border: none;
+  background-color: lightcoral;
+  font-family: 'PlayPen Sans' bold;
+  letter-spacing: 2px;
+  font-size: 16px;
+  color: rgb(243, 243, 243);
+}
+.button-salvar{
+  grid-column-start: 7;
+  margin-top: 30px;
+  grid-row-start: 9;
+  width: 40%;
+  transform: translateX(100%);
+  margin-left: 13vh;
+  height: 7vh;
+  border-radius: 15%;
+  border: none;
+  background-color: rgb(86, 138, 93);
+  font-family: 'PlayPen Sans' bold;
+  letter-spacing: 2px;
+  font-size: 16px;
+  color: lightgray;
 }

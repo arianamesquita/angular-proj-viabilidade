@@ -13,7 +13,7 @@ img{
   align-items: center;
   height: 450px;
   width: 100%;
-  background-color: rgb(183, 192, 165);
+  background-color: rgba(243, 243, 243, 0.473);
   transform: translateX(2%) translateY(4%);
   border-radius: 20px;
 }
@@ -24,6 +24,8 @@ img{
   background-color: transparent;
   border: none;
   color: rgb(80, 75, 75);
+  background-color: rgb(183, 192, 165);
+  border-radius: 50%;
   font-size: 30px;
 }
 .left {

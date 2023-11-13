@@ -1,6 +1,6 @@
 label{
-  font-family: 'Josefin Slab3';
-  letter-spacing: 6px;
+  font-family: 'PlayPen Sans' bold;
+  letter-spacing: 4px;
   font-size: 14px;
   margin-left: 10px;
   padding: 5px;
@@ -10,9 +10,9 @@ input{
   border-radius: 10px;
   border: 1px solid ;
   min-height: 5vh;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-family: 'PlayPen Sans' bold;
+  font-size: 14px;
   padding-left: 15px;
   color: #434543;
-  background-color: #F3F4F3;
+  background-color: #f9faf9;
 }
