@@ -1,0 +1,79 @@
+.container{
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: 50% 1fr;
+}
+.frame-background{
+  background-color: #629454;
+  width: 100vw;
+  height: 80px;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 11;
+}
+.logomarca{
+  background-color: #E4F0E1;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  height: 130px;
+  padding: 30px;
+  margin-left: -125px;
+  margin-top: -10px;
+}
+.person{
+  display: none;
+}
+.login{
+  font-size: 14px;
+  border-radius: 10px;
+  font-family: 'Josefin Slab';
+  border: none;
+  background-color: #727971;
+  color: #F0ECEC;
+  letter-spacing: 10px;
+  height: 40px;
+  width: 180px;
+  opacity: 80%;
+  display: block;
+  margin-top: 3vh;
+  margin-left: 60vw;
+}
+@media (min-width: 100px) and (max-width:750px){
+  .frame-background{
+    background-color: #629454;
+    width: 100vw;
+    height: 100px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 10;
+    margin-top: -10px;
+  }
+  .logomarca{
+    background-color: #E4F0E1;
+    height: 140px;
+    padding: 30px;
+    margin-top: -25px;
+    margin-left: -15px;
+  }
+  .login{
+    display: none;
+  }
+  .person{
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: rgb(32, 32, 32);
+    font-size: 50px;
+    height: 50px;
+    width: 50px;
+    left: 10vw;
+
+  }
+}

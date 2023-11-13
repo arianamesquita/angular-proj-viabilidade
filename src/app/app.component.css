@@ -1,0 +1,51 @@
+div{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  align-items: center;
+}
+.navbar{
+  grid-column-start: 1;
+  grid-column-end: 12;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+.sidebar{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 8;
+  padding-top: 40px;
+}
+.main{
+  grid-column-start: 2;
+  grid-column-end: 11;
+  grid-row-start: 2;
+  grid-row-end: 8;
+  margin-left: 12vh;
+}
+
+@media (min-width: 250px) and (max-width: 750px) {
+  div{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    align-items: center;
+  }
+  .navbar {
+    grid-column: 1 / span 10; /* Ocupa 11 colunas, começando na 1ª coluna */
+    grid-row: 1 / span 2; /* Ocupa 2 linhas, começando na 1ª linha */
+  }
+  .sidebar {
+    grid-column: 1 / span 10; /* Ocupa 1 coluna, começando na 1ª coluna */
+    grid-row: 7 / span 9; /* Ocupa 6 linhas, começando na 3ª linha */
+    margin-top: -15vh;
+  }
+  .main {
+    display: none;
+  }
+}

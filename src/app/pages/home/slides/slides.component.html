@@ -1,0 +1,11 @@
+
+<div class="carousel" *ngIf="display">
+  <button mat-icon-button (click)="previousSlide()" class="nav-button left">
+    <mat-icon>keyboard_arrow_left</mat-icon>
+  </button>
+  <img [src]="images[currentImageIndex]" alt="">
+  <button mat-icon-button (click)="nextSlide()" class="nav-button right">
+    <mat-icon>keyboard_arrow_right</mat-icon>
+  </button>
+</div>
+

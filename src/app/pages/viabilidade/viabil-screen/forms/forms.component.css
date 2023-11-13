@@ -1,0 +1,18 @@
+label{
+  font-family: 'Josefin Slab3';
+  letter-spacing: 6px;
+  font-size: 14px;
+  margin-left: 10px;
+  padding: 5px;
+}
+input{
+  min-width: 30vw;
+  border-radius: 10px;
+  border: 1px solid ;
+  min-height: 5vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  padding-left: 15px;
+  color: #434543;
+  background-color: #F3F4F3;
+}

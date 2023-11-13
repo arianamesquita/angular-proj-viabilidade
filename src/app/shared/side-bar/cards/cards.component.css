@@ -1,0 +1,30 @@
+button{
+  width: 100%;
+  padding: 20px;
+  margin-top: 5px;
+  margin-left: 20px;
+  border: none;
+  background-color: #4C7A40;
+  opacity: 67%;
+  font-size: 12px;
+  border-radius: 10px;
+  font-family: 'JosefinSlab-Regular';
+  color: #F0ECEC;
+  letter-spacing: 4px;
+}
+@media (min-width: 250px) and (max-width: 750px) {
+  button{
+    width: 100%;
+    padding: 40px;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: none;
+    background-color: #4C7A40;
+    opacity: 67%;
+    font-size: 18px;
+    border-radius: 10px;
+    font-family: 'JosefinSlab-Regular';
+    color: #F0ECEC;
+    letter-spacing: 4px;
+  }
+}

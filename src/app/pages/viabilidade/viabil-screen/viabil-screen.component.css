@@ -1,0 +1,92 @@
+.frame{
+  background-color: #D9D9D9;
+  width: 78vw;
+  height: 100vh;
+  transform: translateY(10%);
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  align-items: center;
+  border-radius: 30px;
+}
+.apelido{
+  grid-column-start: 7;
+  margin-top: 15px;
+  grid-row-start: 1;
+}
+.endereco{
+  grid-column-start: 7;
+  margin-top: 15px;
+  grid-row-start: 2;
+}
+.etapa{
+  grid-column-start: 7;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  grid-row-start: 3;
+}
+.areaConstruida{
+  grid-column-start: 7;
+  grid-row-start: 5;
+}
+.qtddAndares{
+  grid-column-start: 7;
+  margin-top: 15px;
+  grid-row-start: 6;
+}
+.qtddVagasUH{
+  grid-column-start: 7;
+  margin-top: 15px;
+  grid-row-start: 7;
+}
+.qtddUHAndar{
+  grid-column-start: 7;
+  margin-top: 15px;
+  grid-row-start: 8;
+}
+.produto{
+  font-family: 'Josefin Slab3';
+  letter-spacing: 6px;
+  font-size: 14px;
+  margin-left: 10px;
+  padding: 5px;
+  grid-column-start: 7;
+  margin-top: 5px;
+  grid-row-start: 4;
+}
+.mapa{
+  grid-column-start: 3;
+  grid-column-end: 10;
+  grid-row-start: 1;
+  grid-row-end: 6;
+  transform: translateX(20%) translateY(-2%);
+  height: 45vh;
+  width: 30vw;
+}
+img{
+  height: 100%;
+}
+.label-left{
+  font-family: 'Josefin Slab3';
+  letter-spacing: 6px;
+  font-size: 14px;
+  margin-top: 15px;
+  margin-left: 10px;
+  padding: 5px;
+  grid-column-start: 4;
+  grid-row-start: 5;
+}
+.coefAproveitamento{
+  grid-column-start: 4;
+  grid-row-start: 6;
+}
+.taxaOcupacao{
+  grid-column-start: 4;
+  margin-top: 15px;
+  grid-row-start: 7;
+}
+.indiceElevacao{
+  grid-column-start: 4;
+  margin-top: 15px;
+  grid-row-start: 8;
+}
