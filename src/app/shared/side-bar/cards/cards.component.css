@@ -14,17 +14,33 @@ button{
 }
 @media (min-width: 250px) and (max-width: 750px) {
   button{
-    width: 100%;
-    padding: 40px;
-    margin-top: 10px;
-    margin-left: 20px;
+    width: 80vw;
+    padding: 8vw;
+    margin-top: 2vh;
+    margin-left: 2vw;
     border: none;
     background-color: #4C7A40;
-    opacity: 67%;
-    font-size: 18px;
-    border-radius: 10px;
-    font-family: 'JosefinSlab-Regular';
+    opacity: 0.67;
+    font-size: 2vh;
+    border-radius: 2svw;
+    font-family: 'Kavivanar';
     color: #F0ECEC;
-    letter-spacing: 4px;
+    letter-spacing: 0.4vw;
+  }
+}
+@media (min-width: 750px) and (max-width: 900px) {
+  button{
+    width: 28vw;
+    padding: 4vw;
+    margin-top: 2vh;
+    margin-left: 2vw;
+    border: none;
+    background-color: #4C7A40;
+    opacity: 0.67;
+    font-size: 1.5vh;
+    border-radius: 2svw;
+    font-family: 'Kavivanar';
+    color: #F0ECEC;
+    letter-spacing: 0.4vw;
   }
 }

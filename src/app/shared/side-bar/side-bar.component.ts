@@ -20,4 +20,28 @@ export class SideBarComponent{
   navigateTo(routerLink: string): void {
     this.router.navigate([routerLink]);
   }
+
+  isIconMoved: boolean = false;
+  display: boolean = true;
+
+  ngOnInit(){
+    this.checkScreenWidth();
+  }
+
+  toggleSideBar(): void{
+    const sidebar = document.getElementById('sidebar');
+    if(sidebar){
+      sidebar.classList.toggle('sidebar-collapsed');
+      document.body.classList.toggle('sidebar-expanded', !sidebar.classList.contains('sidebar-collapsed'));
+    }
+
+    this.isIconMoved = !this.isIconMoved;
+
+    this.checkScreenWidth();
+  }
+
+  private checkScreenWidth(): void{
+    const screenWidth = window.innerWidth;
+    this.display = screenWidth > 750;
+  }
 }

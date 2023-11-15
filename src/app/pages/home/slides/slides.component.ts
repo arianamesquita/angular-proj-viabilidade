@@ -8,13 +8,14 @@ import { Router } from '@angular/router';
 })
 export class SlidesComponent{
 	images = [
-    'assets/images/1.jpg',
+    'assets/images/1.png',
     'assets/images/2.jpg',
     'assets/images/3.jpg',
     'assets/images/4.jpg',
     'assets/images/5.jpg',
   ];
   currentImageIndex = 1;
+  display: boolean = true;
 
   nextSlide(){
     this.currentImageIndex = (this.currentImageIndex + 1) % this.images.length;
@@ -22,8 +23,6 @@ export class SlidesComponent{
   previousSlide(){
     this.currentImageIndex = (this.currentImageIndex - 1 + this.images.length) % this.images.length;
   }
-
-  display: boolean = true;
 
   constructor( private router: Router ){
     this.router.events.subscribe((val) => {

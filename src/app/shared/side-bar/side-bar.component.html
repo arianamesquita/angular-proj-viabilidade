@@ -1,4 +1,4 @@
-<div>
+<div id="sidebar" class="sidebar">
   <app-cards label="{{buttonHome}}" (click)="navigateTo('home')"></app-cards>
   <app-cards label="{{buttonEmpresa}}" (click)="navigateTo('empresa')"></app-cards>
   <app-cards label="{{buttonViabilidade}}" (click)="navigateTo('viabilidade')"></app-cards>
@@ -6,6 +6,9 @@
   <app-cards label="{{buttonAtuacao}}" (click)="navigateTo('portfolio')"></app-cards>
   <app-cards label="{{buttonNovidades}}" (click)="navigateTo('home')"></app-cards>
   <app-cards label="{{buttonContatos}}" (click)="navigateTo('home')"></app-cards>
+</div>
+<div class="toggle-icon" [class.moved]="isIconMoved" (click)="toggleSideBar()">
+  <mat-icon>menu</mat-icon>
 </div>
 
 

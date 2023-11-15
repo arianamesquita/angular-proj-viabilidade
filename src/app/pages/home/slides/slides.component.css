@@ -21,7 +21,6 @@ img{
   position: absolute;
   top: 50%;
   transform: translateY(50%);
-  background-color: transparent;
   border: none;
   color: rgb(80, 75, 75);
   background-color: rgb(183, 192, 165);
@@ -34,8 +33,121 @@ img{
 .right {
   right: 0;
 }
-@media (min-width: 100px) and (max-width: 750px) {
-  .carousel{
-    display: none;
+@media (min-width: 100px) and (max-width: 420px) {
+  img{
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-60%, -50%);
+  }
+  .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width: 120%;
+    background-color: rgba(243, 243, 243, 0.473);
+    transform: translateX(-2vw) translateY(4%);
+    border-radius: 20px;
+    left: -20%;
+  }
+  .nav-button{
+    position: absolute;
+    border: none;
+    color: rgb(80, 75, 75);
+    background-color: rgb(183, 192, 165);
+    border-radius: 50%;
+    font-size: 30px;
+    top: 50%;
+    margin-left: -3vw;
+    margin-right: -4vw;
+  }
+  .left {
+    left: 0;
+  }
+  .right {
+    right: 0;
+  }
+
+}
+@media (min-width: 420px) and (max-width: 750px) {
+  img{
+    max-width: 120%;
+    max-height: 120%;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-60%, -50%);
+  }
+  .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width: 120%;
+    background-color: rgba(243, 243, 243, 0.473);
+    transform: translateX(-2vw) translateY(4%);
+    border-radius: 20px;
+    left: -5%;
+  }
+  .nav-button{
+    position: absolute;
+    border: none;
+    color: rgb(80, 75, 75);
+    background-color: rgb(183, 192, 165);
+    border-radius: 50%;
+    font-size: 30px;
+    top: 50%;
+    margin-left: -17vw;
+    margin-right: -15vw;
+  }
+  .left {
+    left: 0;
+  }
+  .right {
+    right: 0;
+  }
+}
+@media (min-width: 750px) and (max-width: 900px) {
+  img{
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-60%, -50%);
+  }
+  .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width: 110%;
+    background-color: rgba(243, 243, 243, 0.473);
+    transform: translateX(-2vw) translateY(4%);
+    border-radius: 20px;
+    left: -4%;
+  }
+  .nav-button{
+    position: absolute;
+    border: none;
+    color: rgb(80, 75, 75);
+    background-color: rgb(183, 192, 165);
+    border-radius: 50%;
+    font-size: 30px;
+    top: 50%;
+    margin-left: 2vw;
+    margin-right: -2vw;
+  }
+  .left {
+    left: 0;
+  }
+  .right {
+    right: 0;
   }
 }

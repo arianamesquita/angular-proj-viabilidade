@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CardsComponent } from './cards/cards.component';
 import { SideBarComponent } from './side-bar.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -9,7 +10,8 @@ import { SideBarComponent } from './side-bar.component';
     SideBarComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatIconModule
   ],
   exports: [
     SideBarComponent
