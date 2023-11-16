@@ -8,7 +8,6 @@ import { Router } from '@angular/router';
 })
 export class SlidesComponent{
 	images = [
-    'assets/images/1.png',
     'assets/images/2.jpg',
     'assets/images/3.jpg',
     'assets/images/4.jpg',
