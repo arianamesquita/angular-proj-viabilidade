@@ -1,7 +1,7 @@
 button{
   position: relative;
-  width: 420px;
-  height: 159px;
+  width: 35vw;
+  height: 30vh;
   background-color: #a4b6a0;
   border-radius: 20px;
   border: none;
@@ -9,7 +9,7 @@ button{
 }
 p{
   font-family: 'Josefin Slab3';
-  font-size: 18px;
+  font-size: 3vh;
   letter-spacing: 2px;
   text-align: center;
   color: #1D1E1D;
@@ -26,3 +26,8 @@ mat-icon{
   font-size: 40px;
   color: #5a5c5a;
 }
+button:hover{
+  transform: rotateZ(1deg);
+  filter: brightness(0.7);
+}
+

@@ -1,66 +1,21 @@
-@media (min-width: 1050px) {
+@media (min-width: 900px) {
   .frame{
     width: 78vw;
     height: 110vh;
-    transform: translateY(15%);
-    display: grid;
-    grid-template-columns: repeat(11, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     border-radius: 30px;
-  }
-  .apelido{
-    grid-column-start: 7;
-    margin-top: 15px;
-    grid-row-start: 1;
-  }
-  .endereco{
-    grid-column-start: 7;
-    margin-top: 15px;
-    grid-row-start: 2;
-  }
-  .etapa{
-    grid-column-start: 7;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    grid-row-start: 3;
-  }
-  .areaConstruida{
-    grid-column-start: 7;
-    grid-row-start: 5;
-  }
-  .qtddAndares{
-    grid-column-start: 7;
-    margin-top: 15px;
-    grid-row-start: 6;
-  }
-  .qtddVagasUH{
-    grid-column-start: 7;
-    margin-top: 15px;
-    grid-row-start: 7;
-  }
-  .qtddUHAndar{
-    grid-column-start: 7;
-    margin-top: 15px;
-    grid-row-start: 8;
   }
   .produto{
     font-family: 'PlayPen Sans' bold;
     letter-spacing: 4px;
     font-size: 14px;
-    margin-left: 10px;
-    padding: 5px;
-    grid-column-start: 7;
-    margin-top: 5px;
-    grid-row-start: 4;
   }
   .mapa{
-    grid-column-start: 3;
-    grid-column-end: 10;
-    grid-row-start: 1;
-    grid-row-end: 6;
     transform: translateX(20%) translateY(-2%);
-    height: 45vh;
+    height: 30vh;
     width: 30vw;
   }
   img{
@@ -70,64 +25,62 @@
     font-family: 'PlayPen Sans' bold;
     letter-spacing: 4px;
     font-size: 14px;
-    margin-top: 15px;
-    margin-left: 10px;
-    padding: 5px;
-    grid-column-start: 4;
-    grid-row-start: 5;
-  }
-  .coefAproveitamento{
-    grid-column-start: 4;
-    grid-row-start: 6;
-  }
-  .taxaOcupacao{
-    grid-column-start: 4;
-    margin-top: 15px;
-    grid-row-start: 7;
-  }
-  .indiceElevacao{
-    grid-column-start: 4;
-    margin-top: 15px;
-    grid-row-start: 8;
   }
   .button-limpar{
-    grid-column-start: 7;
-    margin-top: 30px;
-    grid-row-start: 9;
-    width: 40%;
-    height: 7vh;
-    border-radius: 15%;
+    width: 16vw;
+    height: 10vh;
+    border-radius: 8vw;
     border: none;
-    background-color: lightcoral;
+    background-color: rgb(223, 139, 139);
     font-family: 'PlayPen Sans' bold;
     letter-spacing: 2px;
     font-size: 16px;
     color: rgb(243, 243, 243);
   }
+  .button-limpar:hover{
+    background-color: rgb(146, 87, 87);
+    opacity: 1.1;
+    animation: change 2s ease-in-out infinite;
+  }
+  .button-salvar:hover{
+    opacity: 1.1;
+    animation: change 2s ease-in-out infinite;
+  }
+  @keyframes change {
+    0%{
+      transform: rotate(2deg);
+    }
+    50%{
+      transform: rotate(-4deg);
+    }
+    100%{
+      transform: rotate(2deg);
+    }
+  }
   .button-salvar{
-    grid-column-start: 7;
-    margin-top: 30px;
-    grid-row-start: 9;
-    width: 40%;
-    transform: translateX(100%);
-    margin-left: 13vh;
-    height: 7vh;
-    border-radius: 15%;
+    width: 16vw;
+    height: 10vh;
+    border-radius: 8vw;
     border: none;
     background-color: rgb(86, 138, 93);
     font-family: 'PlayPen Sans' bold;
     letter-spacing: 2px;
     font-size: 16px;
     color: lightgray;
+    cursor: pointer;
+    margin-left: 7vh;
+    margin-top: 2vh;
   }
 }
 @media (min-width: 100px) and (max-width: 400px) {
   .frame{
-    width: 70vw;
+    width: 90vw;
     height: 110vh;
     align-items: center;
     border-radius: 30px;
-    transform: translateX(-15vw) translateY(20vh);
+    margin-top: 25vh;
+    margin-left: 15vw;
+
   }
   .produto{
     font-family: 'PlayPen Sans' bold;
@@ -154,9 +107,9 @@
 
   }
   .button-limpar{
-    width: 45%;
+    width: 35vw;
     height: 7vh;
-    border-radius: 15%;
+    border-radius: 10vw;
     border: none;
     background-color: lightcoral;
     font-family: 'PlayPen Sans' bold;
@@ -165,27 +118,27 @@
     transform: translateY(2vh);
   }
   .button-salvar{
-    width: 45%;
-    transform: translateX(16vw) translateY(-5vh);
-    margin-left: 13vh;
+    width: 35vw;
     height: 7vh;
-    border-radius: 15%;
+    border-radius: 10vw;
     border: none;
     background-color: rgb(86, 138, 93);
     font-family: 'PlayPen Sans' bold;
     letter-spacing: 2px;
     font-size: 14px;
     color: lightgray;
+    transform: translateY(2vh);
+    margin-left: 2ch;
   }
 }
 
-@media (min-width: 400px) and (max-width: 750px) {
+@media (min-width: 400px) and (max-width: 900px) {
   .frame{
     width: 70vw;
     height: 110vh;
     align-items: center;
     border-radius: 30px;
-    transform: translateX(-15vw) translateY(20vh);
+    padding-top: 15vh;
   }
   .produto{
     font-family: 'PlayPen Sans' bold;
@@ -206,92 +159,54 @@
     font-family: 'PlayPen Sans' bold;
     letter-spacing: 4px;
     font-size: 14px;
-    margin-top: 15px;
-    margin-left: 10px;
     padding: 5px;
 
   }
   .button-limpar{
-    width: 50%;
-    height: 7vh;
-    border-radius: 15%;
+    width: 24vw;
+    height: 8vh;
+    border-radius: 8vw;
     border: none;
-    background-color: lightcoral;
+    background-color: rgb(223, 139, 139);
     font-family: 'PlayPen Sans' bold;
-    font-size: 18px;
+    letter-spacing: 2px;
+    font-size: 16px;
     color: rgb(243, 243, 243);
-    transform: translateY(2vh);
+  }
+  .button-limpar:hover{
+    background-color: rgb(146, 87, 87);
+    opacity: 1.1;
+    animation: change 2s ease-in-out infinite;
+  }
+  .button-salvar:hover{
+    opacity: 1.1;
+    animation: change 2s ease-in-out infinite;
+  }
+  @keyframes change {
+    0%{
+      transform: rotate(2deg);
+    }
+    50%{
+      transform: rotate(-4deg);
+    }
+    100%{
+      transform: rotate(2deg);
+    }
   }
   .button-salvar{
-    width: 50%;
-    transform: translateX(10vw) translateY(-5vh);
-    margin-left: 13vh;
-    height: 7vh;
-    border-radius: 15%;
+    width: 24vw;
+    height: 8vh;
+    border-radius: 8vw;
     border: none;
     background-color: rgb(86, 138, 93);
     font-family: 'PlayPen Sans' bold;
-    font-size: 18px;
+    letter-spacing: 2px;
+    font-size: 16px;
     color: lightgray;
+    cursor: pointer;
+    margin-left: 10vh;
+    margin-top: 2vh;
   }
-}
-
-@media (min-width: 750px) and (max-width: 1050px) {
-  .frame{
-    width: 70vw;
-    height: 110vh;
-    align-items: center;
-    border-radius: 30px;
-    transform: translateX(-5vw) translateY(15vh);
-  }
-  .produto{
-    font-family: 'PlayPen Sans' bold;
-    letter-spacing: 4px;
-    font-size: 14px;
-    margin-left: 10px;
-    padding: 5px;
-  }
-  .mapa{
-    transform: translateX(1vw) translateY(2vh);
-    height: 30vh;
-    width: 20vw;
-  }
-  img{
-    height: 80%;
-  }
-  .label-left{
-    font-family: 'PlayPen Sans' bold;
-    letter-spacing: 4px;
-    font-size: 14px;
-    margin-top: 15px;
-    margin-left: 10px;
-    padding: 5px;
-
-  }
-  .button-limpar{
-    width: 35%;
-    height: 7vh;
-    border-radius: 15%;
-    border: none;
-    background-color: lightcoral;
-    font-family: 'PlayPen Sans' bold;
-    font-size: 22px;
-    color: rgb(243, 243, 243);
-    transform: translateY(2vh);
-  }
-  .button-salvar{
-    width: 35%;
-    transform: translateX(-15vw) translateY(2vh);
-    margin-left: 13vh;
-    height: 7vh;
-    border-radius: 15%;
-    border: none;
-    background-color: rgb(86, 138, 93);
-    font-family: 'PlayPen Sans' bold;
-    font-size: 22px;
-    color: lightgray;
-  }
-
 }
 
 

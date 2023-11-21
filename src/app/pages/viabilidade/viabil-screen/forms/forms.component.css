@@ -4,6 +4,7 @@ label{
   font-size: 14px;
   margin-left: 10px;
   padding: 5px;
+  cursor: pointer;
 }
 input{
   min-width: 30vw;
@@ -14,17 +15,18 @@ input{
   font-size: 14px;
   padding-left: 15px;
   color: #434543;
-  background-color: #f9faf9;
+  background-color: #b5bdb5b0;
+  cursor: pointer;
+}
+label:hover{
+  font-style: italic;
+}
+input:hover{
+  background-color: white;
 }
 
-@media (min-width: 400px) and (max-width: 750px) {
+@media (min-width: 400px) and (max-width: 900px) {
   input{
     width: 70vw;
   }
 }
-@media (min-width: 750px) and (max-width: 900px) {
-  input{
-    width: 50vw;
-  }
-}
-

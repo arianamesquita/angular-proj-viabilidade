@@ -2,7 +2,6 @@ button{
   width: 100%;
   padding: 20px;
   margin-top: 5px;
-  margin-left: 20px;
   border: none;
   background-color: #4C7A40;
   opacity: 67%;
@@ -11,18 +10,32 @@ button{
   font-family: 'JosefinSlab-Regular';
   color: #F0ECEC;
   letter-spacing: 4px;
+  cursor: pointer;
+}
+button:hover{
+  opacity: 1.2;
+  animation: change 2s ease-in-out infinite;
+}
+@keyframes change {
+  0%{
+    transform: rotate(2deg);
+  }
+  50%{
+    transform: rotate(-4deg);
+  }
+  100%{
+    transform: rotate(2deg);
+  }
 }
 @media (min-width: 250px) and (max-width: 750px) {
   button{
     width: 80vw;
-    padding: 8vw;
-    margin-top: 2vh;
-    margin-left: 2vw;
+    padding: 3vh;
     border: none;
     background-color: #4C7A40;
     opacity: 0.67;
     font-size: 2vh;
-    border-radius: 2svw;
+    border-radius: 2.5vw;
     font-family: 'Kavivanar';
     color: #F0ECEC;
     letter-spacing: 0.4vw;
@@ -30,17 +43,31 @@ button{
 }
 @media (min-width: 750px) and (max-width: 900px) {
   button{
-    width: 28vw;
-    padding: 4vw;
-    margin-top: 2vh;
+    width: 20vw;
+    padding: 2.5vw;
     margin-left: 2vw;
     border: none;
     background-color: #4C7A40;
     opacity: 0.67;
     font-size: 1.5vh;
-    border-radius: 2svw;
     font-family: 'Kavivanar';
     color: #F0ECEC;
     letter-spacing: 0.4vw;
+    cursor: pointer;
+  }
+  button:hover{
+    opacity: 1.2;
+    animation: change 2s ease-in-out infinite;
+  }
+  @keyframes change {
+    0%{
+      transform: rotate(2deg);
+    }
+    50%{
+      transform: rotate(-4deg);
+    }
+    100%{
+      transform: rotate(2deg);
+    }
   }
 }

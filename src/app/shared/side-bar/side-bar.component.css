@@ -1,34 +1,39 @@
 
 @media (min-width: 100px) and (max-width: 400px) {
   .toggle-icon {
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    transform: translate(470%, 50%);
     cursor: pointer;
-    display: inline;
     transition: left 0.3s;
   }
   .toggle-icon.moved {
-    left: -32%;
+    transform: translateY(18%);
+    margin-left: -10px;
   }
   mat-icon{
     display: flex;
+    transform: translateY(15%);
     align-items: center;
     justify-content: center;
-    font-size: 8vw;
+    font-size: 6vw;
     height: 50vh;
-    width: 4vh;
+    width: 3vh;
     background-color: rgb(181, 206, 181);
-    padding: 2vh;
+    padding: 1vh;
+    margin-left: 2vw;
   }
   .sidebar {
-    margin-top: 8vh;
-    width: 100vw;
+    width: 90vw;
+    transform: translateY(10%);
     transition: width 0.3s;
+    display: flex;
+    flex-direction: column;
   }
   .sidebar-collapsed {
     display: none;
+  }
+  section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 }
 
@@ -36,14 +41,40 @@
   .toggle-icon {
     position: absolute;
     top: 20vh;
-    left: 50%;
-    transform: translate(420%, 50%);
+    left: 42%;
+    transform: translate(1050%, 30%);
     cursor: pointer;
     display: inline;
     transition: left 0.3s;
   }
   .toggle-icon.moved {
-    left: -35%;
+    left: -42%;
+  }
+  mat-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6vw;
+    height: 40vh;
+    width: 4vw;
+    background-color: rgb(181, 206, 181);
+    padding: 2vh;
+  }
+  .sidebar {
+    width: 80%;
+    transition: width 0.3s;
+  }
+  .sidebar-collapsed {
+    display: none;
+  }
+}
+
+@media (min-width: 750px)  and (max-width: 900px){
+  .toggle-icon {
+    display: none;
+  }
+  .toggle-icon.moved {
+    left: -2%;
   }
   mat-icon{
     display: flex;
@@ -56,26 +87,36 @@
     padding: 2vh;
   }
   .sidebar {
-    width: 115vw;
-    transition: width 0.3s;
+    width: 80%;
+    height: 80%;
   }
   .sidebar-collapsed {
     display: none;
   }
-}
 
-@media (min-width: 750px) and (max-width: 1050px) {
+}
+@media (min-width: 900px) {
   .toggle-icon {
     display: none;
   }
-  .sidebar {
-    width: 25vw;
-    margin-top: -15vh;
+  .toggle-icon.moved {
+    left: -2%;
   }
-
-}
-@media (min-width: 1050px) {
-  .toggle-icon {
+  mat-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 8vw;
+    height: 40vh;
+    width: 4vw;
+    background-color: rgb(181, 206, 181);
+    padding: 2vh;
+  }
+  .sidebar {
+    width: 80%;
+    height: 80%;
+  }
+  .sidebar-collapsed {
     display: none;
   }
 
