@@ -26,6 +26,7 @@
     transition: width 0.3s;
     display: flex;
     flex-direction: column;
+    background-color: white;
   }
   .sidebar-collapsed {
     display: none;
@@ -63,6 +64,7 @@
   .sidebar {
     width: 80%;
     transition: width 0.3s;
+    background-color: white;
   }
   .sidebar-collapsed {
     display: none;
@@ -89,6 +91,7 @@
   .sidebar {
     width: 80%;
     height: 80%;
+    background-color: white;
   }
   .sidebar-collapsed {
     display: none;
